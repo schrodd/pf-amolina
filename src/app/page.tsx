@@ -7,6 +7,7 @@ import Contact from "./sections/Contact";
 import Link from "next/link";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import HomeIcon from '@mui/icons-material/Home';
+import Certificates from "./sections/Certificates";
 
 export default function Home() {
   function scrollTop() {
@@ -21,6 +22,7 @@ export default function Home() {
           <li><Link href='#me'>Sobre mí</Link></li>
           <li><Link href='#stack'>Mi Stack</Link></li>
           <li><Link href='#projects'>Proyectos</Link></li>
+          <li><Link href='#certificates'>Certificados</Link></li>
           <li><Link href='#contact'>Contacto</Link></li>
         </ul>
       </header>
@@ -29,6 +31,7 @@ export default function Home() {
         <Me/>
         <Stack/>
         <Projects/>
+        <Certificates/>
         <Contact/>
         <Link href='/' onClick={scrollTop} className="cont mb-10 px-3 py-1 text-xs"><KeyboardArrowUpIcon className="mr-1 -ml-1"/>Volver arriba</Link>
       </main>
