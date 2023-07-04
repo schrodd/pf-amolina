@@ -18,7 +18,7 @@ export default function Contact(){
       <h3 className='text-center'>Contacto</h3>
       <div className='p-5 flex flex-col md:flex-row flex-wrap gap-2'>
         {contact.map((e,i) => (
-          <Link href={e.link} className="flex gap-2 items-center p-5 py-2 cont flex-grow w-full md:w-auto">
+          <Link key={i} href={e.link} className="flex gap-2 items-center p-5 py-2 cont flex-grow w-full md:w-auto">
             <e.icon/>
             <h4>{e.text}</h4>
           </Link>
