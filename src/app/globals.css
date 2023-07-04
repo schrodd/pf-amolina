@@ -14,7 +14,7 @@ h5 {@apply text-lg font-light tracking-wide}
 p {@apply text-base font-extralight}
 
 .with-border {@apply shadow bg-slate-300/5 m-5 p-5 rounded-xl border border-white/10}
-.cont {@apply shadow-md bg-slate-300/5 border-white/10 rounded-xl border backdrop-blur}
+.cont {@apply shadow-md bg-slate-300/5 border-white/10 rounded-xl border backdrop-blur transition hover:border-white/30}
 .round {@apply shadow-md bg-slate-300/5 border-white/10 rounded-full border backdrop-blur}
 .tag {@apply shadow bg-slate-300/5 px-3 rounded-xl border border-white/10 w-max tracking-wide font-extralight text-sm}
 @media (min-width: 800px) {
