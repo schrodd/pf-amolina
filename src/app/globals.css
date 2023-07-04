@@ -11,7 +11,7 @@ h2 {@apply text-3xl font-light tracking-wide}
 h3 {@apply text-3xl font-bold}
 h4 {@apply text-xl tracking-wide}
 h5 {@apply text-lg font-light tracking-wide}
-p {@apply text-sm font-extralight}
+p {@apply text-base font-extralight}
 
 .with-border {@apply shadow bg-slate-300/5 m-5 p-5 rounded-xl border border-white/10}
 .cont {@apply shadow-md bg-slate-300/5 border-white/10 rounded-xl border backdrop-blur}
