@@ -36,7 +36,7 @@ export default function Projects(){
       <div className="m-5 mt-0 md:m-0 flex flex-wrap justify-center gap-5 mb-10">
         {projects.map((e,i) => (
           <div key={i} className="cont p-5 text-sm font-extralight flex flex-col flex-grow w-full md:w-1/3 gap-3">
-            <Link href={e.link} target="_blank" rel='noopener' className="w-auto h-[150px] md:h-[200px] relative">
+            <Link href={e.link} target="_blank" rel='noopener' className="w-auto h-[200px] relative">
               <Image src={e.img[0]} alt='project image' className="img-border object-cover object-left" fill/>
               <Image src={e.img[1]} alt='project image' className="img-border object-cover object-left toggle" fill/>
             </Link>
