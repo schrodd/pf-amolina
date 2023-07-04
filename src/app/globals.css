@@ -2,26 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth !important;
 }
+p,h1,h2,h3,h4,h5,h6 {@apply drop-shadow-md}
+h1 {@apply text-6xl font-bold}
+h2 {@apply text-3xl font-light tracking-wide}
+h3 {@apply text-3xl font-bold}
+h4 {@apply text-xl tracking-wide}
+h5 {@apply text-lg font-light tracking-wide}
+p {@apply text-sm font-extralight}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.with-border {@apply shadow bg-slate-300/5 m-5 p-5 rounded-xl border border-white/10}
+.cont {@apply shadow-md bg-slate-300/5 border-white/10 rounded-xl border backdrop-blur}
+.round {@apply shadow-md bg-slate-300/5 border-white/10 rounded-full border backdrop-blur}
+.tag {@apply shadow bg-slate-300/5 px-3 rounded-xl border border-white/10 w-max tracking-wide font-extralight text-sm}
+@media (min-width: 800px) {
+  .tab>div>h4 {
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
   }
 }
+.img-border {@apply rounded-md overflow-hidden shadow-lg border border-white/10}
+@keyframes anim-opac-out {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+}
+.toggle {
+  animation: anim-opac-out 15s ease-out 1s infinite;
+}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html::-webkit-scrollbar {
+  @apply bg-slate-800
+}
+html::-webkit-scrollbar-thumb {
+  @apply bg-slate-600
+}
+html::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-500
+}
+
+li {@apply tracking-wider}
+li:hover, a:hover {@apply underline}
+
+.rainbow {
+  background: linear-gradient(228deg, #0f172a, #475569);
+  background-size: 400% 400%;
+
+  animation: AnimationName 10s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:99% 0%}
+  50%{background-position:2% 100%}
+  100%{background-position:99% 0%}
 }
