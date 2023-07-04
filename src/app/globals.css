@@ -23,6 +23,11 @@ p {@apply text-base font-extralight}
     text-align: right;
     margin-right: 10px;
   }
+
+  body {
+    background-image: url('/bg.jpg') !important;
+    background-size: cover;
+  }
 }
 .img-border {@apply rounded-md overflow-hidden shadow-lg border border-white/10}
 @keyframes anim-opac-out {
@@ -56,8 +61,3 @@ html::-webkit-scrollbar-thumb:hover {
 li {@apply tracking-wider}
 li:hover, a:hover {@apply underline}
 
-body {
-  background-image: url('/bg.jpg') !important;
-  background-size: cover;
-  background-attachment: fixed;
-}
