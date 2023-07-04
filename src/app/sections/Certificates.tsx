@@ -36,8 +36,8 @@ export default function Certificates(){
       <div className='p-5 flex flex-col md:flex-row flex-wrap gap-5'>
         {certs.map((e,i) => (
           <div key={i} className="cont p-5 text-center md:w-1/3 md:flex-grow flex flex-col align-center justify-center">
-            <h4 className="font-semibold text-2xl">{e.name}</h4>
-            <h5 className="font-extralight">{e.issuer}</h5>
+            <h4 className="font-semibold">{e.name}</h4>
+            <h5 className="font-extralight text-sm">{e.issuer}</h5>
             <div className="flex flex-col md:flex-row gap-2 mt-3 justify-center items-center mb-2 md:mb-0">
               <Link key={i} href={e.extLink} rel='noopener' target='_blank'
               className="cont flex items-center justify-center p-1 px-3 gap-2">
