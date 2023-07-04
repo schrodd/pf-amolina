@@ -6,7 +6,7 @@ export default function Top(){
   const tags = ['React','Typescript','Javascript/ES6','NextJS','MaterialUI','Framer Motion','Tailwind','Sass','+']
   return (
     <section className="flex flex-col md:flex-row md:w-2/3 h-auto md:h-screen items-center relative">
-      <div className="flex-1 md:w-1/2 p-5 md:p-0 relative z-10 text-center md:text-left">
+      <div className="flex-1 md:w-1/2 p-5 md:p-0 relative z-10 text-center md:text-left mt-10 md:mt-0">
         <h1>Andrés Molina</h1>
         <h2 className="text-lg md:text-3xl mb-5">Desarrollador Frontend</h2>
         <div id='tags' className="flex gap-2 mt-2 flex-wrap md:pr-10 justify-center md:justify-start">
