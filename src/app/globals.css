@@ -16,7 +16,7 @@ p {@apply text-base font-extralight}
 .with-border {@apply shadow bg-slate-300/5 m-5 p-5 rounded-xl border border-white/10}
 .cont {@apply shadow-md bg-slate-300/5 border-white/10 rounded-xl border backdrop-blur transition hover:border-white/30}
 .round {@apply shadow-md bg-slate-300/5 border-white/10 rounded-full border backdrop-blur}
-.tag {@apply shadow bg-slate-300/5 px-3 rounded-xl border border-white/10 w-max tracking-wide font-extralight text-sm}
+.tag {@apply shadow bg-slate-300/5 px-3 rounded-xl border border-white/10 w-max tracking-wide backdrop-blur font-extralight text-sm}
 @media (min-width: 800px) {
   .tab>div>h4 {
     width: 200px;
@@ -44,27 +44,20 @@ p {@apply text-base font-extralight}
 }
 
 html::-webkit-scrollbar {
-  @apply bg-slate-800
+  @apply bg-zinc-900
 }
 html::-webkit-scrollbar-thumb {
-  @apply bg-slate-600
+  @apply bg-gray-600
 }
 html::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-500
+  @apply bg-gray-500
 }
 
 li {@apply tracking-wider}
 li:hover, a:hover {@apply underline}
 
-.rainbow {
-  background: linear-gradient(228deg, #0f172a, #475569);
-  background-size: 400% 400%;
-
-  animation: AnimationName 10s ease infinite;
-}
-
-@keyframes AnimationName {
-  0%{background-position:99% 0%}
-  50%{background-position:2% 100%}
-  100%{background-position:99% 0%}
+body {
+  background-image: url('/bg.jpg') !important;
+  background-size: cover;
+  background-attachment: fixed;
 }
