@@ -32,7 +32,7 @@ export default function Certificates(){
   ]
   return (
     <section id='certificates' className="pt-5 m-5 md:mt-10 md:w-2/3">
-      <h3 className='text-center'>Certificados</h3>
+      <h3 className='text-center'>Certificados y descargas</h3>
       <div className='p-5 flex flex-col md:flex-row flex-wrap gap-5'>
         {certs.map((e,i) => (
           <div key={i} className="cont p-5 text-center md:w-1/3 md:flex-grow flex flex-col align-center justify-center">
@@ -41,9 +41,9 @@ export default function Certificates(){
             <div className="flex flex-col md:flex-row gap-2 mt-3 justify-center items-center mb-2 md:mb-0">
               <Link key={i} href={e.extLink} rel='noopener' target='_blank'
               className="cont flex items-center justify-center p-1 px-3 gap-2">
-                <RemoveRedEyeIcon/>Ver certificado
+                <RemoveRedEyeIcon/>Ver
               </Link>
-              <Link key={i} href={e.link} rel='noopener' target='_blank'
+              <Link key={i} href={e.link} rel='noopener' target='_blank' download={true}
               className="cont flex items-center justify-center p-1 px-3 gap-2">
                 <DownloadIcon/>Descargar
               </Link>

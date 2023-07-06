@@ -62,4 +62,5 @@ li:hover, a:hover {@apply underline}
   width: 100vw;
   background-image: url('/bg.jpg');
   background-size: cover;
+  background-position-y: -1;
 }
