@@ -32,7 +32,7 @@ export default function Certificates(){
   ]
   return (
     <section id='certificates' className="pt-5 m-5 md:mt-10 md:w-2/3">
-      <h3 className='text-center'>Certificados y descargas</h3>
+      <h3 className='text-center'>Certificados</h3>
       <div className='p-5 flex flex-col md:flex-row flex-wrap gap-5'>
         {certs.map((e,i) => (
           <div key={i} className="cont p-5 text-center md:w-1/3 md:flex-grow flex flex-col align-center justify-center">
