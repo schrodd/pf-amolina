@@ -21,7 +21,7 @@ export default function Home() {
     const bg: HTMLElement | null = document.getElementById('bg')
     if (bg) {
       window.addEventListener('scroll', () => {
-        bg.style.backgroundPositionY = (-window.scrollY/10).toString()+'px'
+        bg.style.backgroundPositionY = (-window.scrollY/6).toString()+'px'
       })
     }
   }, [])
